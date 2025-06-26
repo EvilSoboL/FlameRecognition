@@ -7,3 +7,6 @@ FlameRecognition/
 │   ├── train.csv        # Разделение для обучения
 │   ├── val.csv          # Разделение для валидации
 │   └── test.csv         # Разделение для тестирования
+├── scripts/
+│   ├── check_data_loading.py  # Проверка загрузки данных
+│   ├── prepare_csv.py         # Подготовка data.csv, test.csv, val.csv
