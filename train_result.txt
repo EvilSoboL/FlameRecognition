@@ -1,0 +1,171 @@
+C:\Users\evils\PycharmProjects\FlameRecognition\.venv\Scripts\python.exe C:\Users\evils\PycharmProjects\FlameRecognition\scripts\train_model.py
+Using device: cpu
+Starting training for 30 epochs...
+
+Epoch 1/30
+  Training: 100%|██████████| 83/83 [05:27<00:00,  3.94s/batch, loss=539155.4375]
+  Validating: 100%|██████████| 11/11 [00:41<00:00,  3.77s/batch, val_mape=99.99%]
+Epoch 1 done in 368.8s - Train Loss: 651745.5595 | Val Loss: 655487.0568 | Val MAPE: 97.93%
+  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 97.93%)
+
+Epoch 2/30
+  Training: 100%|██████████| 83/83 [05:01<00:00,  3.64s/batch, loss=679258.6250]
+  Validating: 100%|██████████| 11/11 [00:39<00:00,  3.56s/batch, val_mape=99.93%]
+Epoch 2 done in 340.9s - Train Loss: 609523.0486 | Val Loss: 595791.3864 | Val MAPE: 94.34%
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 94.34%)
+
+Epoch 3/30
+  Training: 100%|██████████| 83/83 [04:56<00:00,  3.57s/batch, loss=451904.0312]
+  Validating: 100%|██████████| 11/11 [00:42<00:00,  3.87s/batch, val_mape=99.78%]
+Epoch 3 done in 338.8s - Train Loss: 549310.2658 | Val Loss: 509723.6847 | Val MAPE: 88.44%
+  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 88.44%)
+
+Epoch 4/30
+  Training: 100%|██████████| 83/83 [05:00<00:00,  3.62s/batch, loss=568385.9375]
+  Validating: 100%|██████████| 11/11 [00:41<00:00,  3.79s/batch, val_mape=78.99%]
+Epoch 4 done in 341.8s - Train Loss: 489520.4767 | Val Loss: 428487.6165 | Val MAPE: 76.27%
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 76.27%)
+
+Epoch 5/30
+  Training: 100%|██████████| 83/83 [04:29<00:00,  3.25s/batch, loss=453505.2500]
+  Validating: 100%|██████████| 11/11 [00:38<00:00,  3.54s/batch, val_mape=83.15%]
+Epoch 5 done in 308.9s - Train Loss: 443153.5745 | Val Loss: 330415.0597 | Val MAPE: 70.01%
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 70.01%)
+
+Epoch 6/30
+  Training: 100%|██████████| 83/83 [04:42<00:00,  3.40s/batch, loss=430189.5625]
+  Validating: 100%|██████████| 11/11 [00:40<00:00,  3.66s/batch, val_mape=79.53%]
+Epoch 6 done in 322.8s - Train Loss: 393232.7764 | Val Loss: 339083.1222 | Val MAPE: 67.84%
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 67.84%)
+
+Epoch 7/30
+  Training: 100%|██████████| 83/83 [05:55<00:00,  4.28s/batch, loss=346411.2812]
+  Validating: 100%|██████████| 11/11 [00:38<00:00,  3.53s/batch, val_mape=69.50%]
+Epoch 7 done in 394.2s - Train Loss: 328707.7026 | Val Loss: 302624.3551 | Val MAPE: 60.47%
+  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 60.47%)
+
+Epoch 8/30
+  Training: 100%|██████████| 83/83 [05:34<00:00,  4.03s/batch, loss=288344.7500]
+  Validating: 100%|██████████| 11/11 [00:40<00:00,  3.69s/batch, val_mape=73.33%]
+Epoch 8 done in 374.8s - Train Loss: 271621.6557 | Val Loss: 196401.9702 | Val MAPE: 52.54%
+  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 52.54%)
+
+Epoch 9/30
+  Training: 100%|██████████| 83/83 [04:49<00:00,  3.49s/batch, loss=203056.3281]
+  Validating: 100%|██████████| 11/11 [00:36<00:00,  3.34s/batch, val_mape=75.94%]
+Epoch 9 done in 326.4s - Train Loss: 234445.4825 | Val Loss: 174809.4972 | Val MAPE: 53.99%
+
+Epoch 10/30
+  Training: 100%|██████████| 83/83 [04:15<00:00,  3.08s/batch, loss=193447.6719]
+  Validating: 100%|██████████| 11/11 [00:34<00:00,  3.16s/batch, val_mape=71.24%]
+Epoch 10 done in 290.2s - Train Loss: 200941.2610 | Val Loss: 168465.2102 | Val MAPE: 56.81%
+
+Epoch 11/30
+  Training: 100%|██████████| 83/83 [04:31<00:00,  3.27s/batch, loss=102795.7266]
+  Validating: 100%|██████████| 11/11 [00:43<00:00,  3.96s/batch, val_mape=52.53%]
+Epoch 11 done in 314.6s - Train Loss: 172686.5946 | Val Loss: 138083.5632 | Val MAPE: 43.20%
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 43.20%)
+
+Epoch 12/30
+  Training: 100%|██████████| 83/83 [05:01<00:00,  3.63s/batch, loss=112405.3359]
+  Validating: 100%|██████████| 11/11 [00:33<00:00,  3.04s/batch, val_mape=50.39%]
+Epoch 12 done in 335.0s - Train Loss: 130277.3782 | Val Loss: 102335.4961 | Val MAPE: 38.53%
+  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 38.53%)
+
+Epoch 13/30
+  Training: 100%|██████████| 83/83 [04:01<00:00,  2.91s/batch, loss=82271.6172]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.97s/batch, val_mape=37.87%]
+Epoch 13 done in 274.5s - Train Loss: 94023.2540 | Val Loss: 63901.6768 | Val MAPE: 32.72%
+  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 32.72%)
+
+Epoch 14/30
+  Training: 100%|██████████| 83/83 [03:58<00:00,  2.88s/batch, loss=44776.1992]
+  Validating: 100%|██████████| 11/11 [00:33<00:00,  3.04s/batch, val_mape=43.17%]
+Epoch 14 done in 272.2s - Train Loss: 63728.8487 | Val Loss: 41499.9734 | Val MAPE: 36.28%
+
+Epoch 15/30
+  Training: 100%|██████████| 83/83 [03:57<00:00,  2.86s/batch, loss=28000.9375]
+  Validating: 100%|██████████| 11/11 [00:34<00:00,  3.15s/batch, val_mape=41.15%]
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]Epoch 15 done in 271.7s - Train Loss: 47092.6970 | Val Loss: 40761.8999 | Val MAPE: 33.67%
+
+Epoch 16/30
+  Training: 100%|██████████| 83/83 [03:19<00:00,  2.40s/batch, loss=32066.5625]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.97s/batch, val_mape=39.45%]
+Epoch 16 done in 232.2s - Train Loss: 39431.7384 | Val Loss: 37256.4178 | Val MAPE: 33.15%
+
+Epoch 17/30
+  Training: 100%|██████████| 83/83 [03:35<00:00,  2.60s/batch, loss=44858.7148]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.95s/batch, val_mape=35.52%]
+Epoch 17 done in 248.3s - Train Loss: 36481.7557 | Val Loss: 40854.5302 | Val MAPE: 30.25%
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 30.25%)
+
+Epoch 18/30
+  Training: 100%|██████████| 83/83 [03:29<00:00,  2.53s/batch, loss=28549.1914]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.98s/batch, val_mape=38.90%]
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]Epoch 18 done in 242.6s - Train Loss: 33623.7181 | Val Loss: 32869.3521 | Val MAPE: 33.88%
+
+Epoch 19/30
+  Training: 100%|██████████| 83/83 [03:30<00:00,  2.53s/batch, loss=45492.4141]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.99s/batch, val_mape=38.59%]
+Epoch 19 done in 243.0s - Train Loss: 33554.0934 | Val Loss: 31105.8315 | Val MAPE: 34.07%
+
+Epoch 20/30
+  Training: 100%|██████████| 83/83 [03:28<00:00,  2.51s/batch, loss=30377.3848]
+  Validating: 100%|██████████| 11/11 [00:31<00:00,  2.91s/batch, val_mape=36.18%]
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]Epoch 20 done in 240.6s - Train Loss: 31612.0809 | Val Loss: 31305.7069 | Val MAPE: 31.03%
+
+Epoch 21/30
+  Training: 100%|██████████| 83/83 [03:28<00:00,  2.51s/batch, loss=34216.4766]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  3.00s/batch, val_mape=36.76%]
+Epoch 21 done in 241.0s - Train Loss: 32247.3000 | Val Loss: 30318.8652 | Val MAPE: 32.24%
+
+Epoch 22/30
+  Training: 100%|██████████| 83/83 [03:29<00:00,  2.52s/batch, loss=35905.0977]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.96s/batch, val_mape=35.65%]
+Epoch 22 done in 241.9s - Train Loss: 32272.9193 | Val Loss: 31495.4679 | Val MAPE: 31.36%
+
+Epoch 23/30
+  Training: 100%|██████████| 83/83 [03:28<00:00,  2.51s/batch, loss=51633.6094]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.95s/batch, val_mape=34.76%]
+Epoch 23 done in 241.0s - Train Loss: 31208.7245 | Val Loss: 30390.2015 | Val MAPE: 30.18%
+  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 30.18%)
+
+Epoch 24/30
+  Training: 100%|██████████| 83/83 [03:30<00:00,  2.54s/batch, loss=35495.6602]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.91s/batch, val_mape=33.61%]
+Epoch 24 done in 242.7s - Train Loss: 31983.5405 | Val Loss: 32177.0181 | Val MAPE: 28.72%
+  Saved best model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model.pth (Val MAPE: 28.72%)
+
+Epoch 25/30
+  Training: 100%|██████████| 83/83 [03:29<00:00,  2.52s/batch, loss=24885.8887]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  3.00s/batch, val_mape=34.64%]
+Epoch 25 done in 242.0s - Train Loss: 30672.7846 | Val Loss: 31358.4682 | Val MAPE: 29.87%
+
+Epoch 26/30
+  Training: 100%|██████████| 83/83 [03:29<00:00,  2.53s/batch, loss=28621.8223]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.96s/batch, val_mape=36.17%]
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]Epoch 26 done in 242.5s - Train Loss: 30326.1611 | Val Loss: 30417.2047 | Val MAPE: 31.41%
+
+Epoch 27/30
+  Training: 100%|██████████| 83/83 [03:29<00:00,  2.52s/batch, loss=29003.8008]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.94s/batch, val_mape=35.69%]
+Epoch 27 done in 241.6s - Train Loss: 29858.1983 | Val Loss: 29749.6335 | Val MAPE: 30.46%
+
+Epoch 28/30
+  Training: 100%|██████████| 83/83 [03:31<00:00,  2.54s/batch, loss=29690.5195]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.94s/batch, val_mape=36.38%]
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]Epoch 28 done in 243.5s - Train Loss: 30907.8826 | Val Loss: 30147.9370 | Val MAPE: 31.29%
+
+Epoch 29/30
+  Training: 100%|██████████| 83/83 [03:30<00:00,  2.54s/batch, loss=18873.6152]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.94s/batch, val_mape=35.44%]
+  Training:   0%|          | 0/83 [00:00<?, ?batch/s]Epoch 29 done in 242.8s - Train Loss: 29268.2559 | Val Loss: 29604.8017 | Val MAPE: 30.61%
+
+Epoch 30/30
+  Training: 100%|██████████| 83/83 [03:27<00:00,  2.50s/batch, loss=26338.0820]
+  Validating: 100%|██████████| 11/11 [00:32<00:00,  2.98s/batch, val_mape=36.78%]
+Epoch 30 done in 240.3s - Train Loss: 29867.2479 | Val Loss: 29930.7884 | Val MAPE: 32.37%
+
+Training complete.
+
+Process finished with exit code 0
