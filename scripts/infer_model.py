@@ -27,6 +27,27 @@ def predict_image(model, image_path):
     fuel_pred, dil_pred = out[0].cpu().numpy()
     return fuel_pred, dil_pred
 
+# Функция выбора модели по имени файла
+def create_model_from_path(path):
+    filename = os.path.basename(path).lower()
+    if 'densenet' in filename:
+        backbone = models.densenet121(weights=None)
+        num_feats = backbone.classifier.in_features
+        backbone.classifier = nn.Sequential(
+            nn.Linear(num_feats, 128),
+            nn.ReLU(),
+            nn.Linear(128, 2)
+        )
+    else:
+        backbone = models.efficientnet_b0(weights=None)
+        num_feats = backbone.classifier[1].in_features
+        backbone.classifier = nn.Sequential(
+            nn.Linear(num_feats, 128),
+            nn.ReLU(),
+            nn.Linear(128, 2)
+        )
+    return backbone
+
 # Основная функция
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Inference for FlameRecognition model')
@@ -35,15 +56,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # Загрузка модели
-    # Создаем ту же архитектуру, что и при обучении
-    backbone = models.efficientnet_b0(weights=None)
-    num_feats = backbone.classifier[1].in_features
-    backbone.classifier = nn.Sequential(
-        nn.Linear(num_feats, 128),
-        nn.ReLU(),
-        nn.Linear(128, 2)
-    )
-    model = backbone.to(DEVICE)
+    model = create_model_from_path(args.model).to(DEVICE)
     state = torch.load(args.model, map_location=DEVICE)
     model.load_state_dict(state)
     print(f'Model loaded from {args.model} on {DEVICE}')
