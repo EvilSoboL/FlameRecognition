@@ -10,3 +10,4 @@ FlameRecognition/
 ├── scripts/
 │   ├── check_data_loading.py  # Проверка загрузки данных
 │   ├── prepare_csv.py         # Подготовка data.csv, test.csv, val.csv
+│   ├── train_model.py         # Обучение модели

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="0.2 - реализован класс FlameDataset, метод - check_loader">
-      <change afterPath="$PROJECT_DIR$/scripts/train_model.py" afterDir="false" />
+    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="0.3 - натренерованная модель Val MAPE: 30.61%, 30 эпох">
+      <change afterPath="$PROJECT_DIR$/scripts/infer_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/train_model_densenet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "EvilSoboL"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EvilSoboL&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/EvilSoboL/FlameRecognition.git",
-    "accountId": "5480ee18-96e3-4b19-9cbb-eb1fb8827317"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EvilSoboL/FlameRecognition.git&quot;,
+    &quot;accountId&quot;: &quot;5480ee18-96e3-4b19-9cbb-eb1fb8827317&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -43,26 +45,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.check_data_loading.executor": "Run",
-    "Python.prepare_csv.executor": "Run",
-    "Python.train_model.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/evils/PycharmProjects/FlameRecognition/data/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.check_data_loading.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_model_densenet.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/evils/PycharmProjects/FlameRecognition/data/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\evils\PycharmProjects\FlameRecognition\data\images" />
@@ -71,7 +74,7 @@
       <recent name="C:\Users\evils\PycharmProjects\FlameRecognition\scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.train_model">
+  <component name="RunManager">
     <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FlameRecognition" />
       <option name="ENV_FILES" value="" />
@@ -141,7 +144,9 @@
       <option name="presentableId" value="Default" />
       <updated>1750152840365</updated>
       <workItem from="1750152841414" duration="1914000" />
-      <workItem from="1750915290936" duration="16488000" />
+      <workItem from="1750915290936" duration="28855000" />
+      <workItem from="1751882485413" duration="4046000" />
+      <workItem from="1752037188448" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="0.1 - Составлена csv таблица с путем до изображения для обучения, валидации и тестирования">
       <option name="closed" value="true" />
@@ -159,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750926829364</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="0.3 - натренерованная модель Val MAPE: 30.61%, 30 эпох">
+      <option name="closed" value="true" />
+      <created>1751000377585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751000377585</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,9 +181,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0.1 - Составлена csv таблица с путем до изображения для обучения, валидации и тестирования" />
     <MESSAGE value="0.2 - реализован класс FlameDataset, метод - check_loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.2 - реализован класс FlameDataset, метод - check_loader" />
+    <MESSAGE value="0.3 - натренерованная модель Val MAPE: 30.61%, 30 эпох" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.3 - натренерованная модель Val MAPE: 30.61%, 30 эпох" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FlameRecognition$train_model_densenet.coverage" NAME="train_model_densenet Coverage Results" MODIFIED="1751882510740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/FlameRecognition$prepare_csv.coverage" NAME="prepare_csv Coverage Results" MODIFIED="1750920769769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/FlameRecognition$check_data_loading.coverage" NAME="check_data_loading Coverage Results" MODIFIED="1750925162230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/FlameRecognition$train_model.coverage" NAME="train_model Coverage Results" MODIFIED="1750928043407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
