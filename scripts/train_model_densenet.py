@@ -8,10 +8,11 @@ from torchvision import models, transforms
 from multiprocessing import freeze_support
 from tqdm import tqdm
 from dataset import FlameDataset
+import logging
 
 # Параметры
 BATCH_SIZE = 16
-NUM_EPOCHS = 60
+NUM_EPOCHS = 70
 LR = 1e-4
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -66,8 +67,13 @@ def main():
 
     best_val_mape = float('inf')
     print(f"Starting training for {NUM_EPOCHS} epochs with DenseNet121...")
+
+    logging.basicConfig(filename='training.log', level=logging.INFO)
+    logger = logging.getLogger()
+
     for epoch in range(1, NUM_EPOCHS + 1):
         start_time = time.time()
+        logger.info(f"\nEpoch {epoch}/{NUM_EPOCHS}")
         print(f"\nEpoch {epoch}/{NUM_EPOCHS}")
 
         # ===== TRAIN =====
@@ -107,6 +113,8 @@ def main():
         elapsed = time.time() - start_time
 
         print(f"Epoch {epoch} done in {elapsed:.1f}s - Train Loss: {avg_train:.4f} | Val Loss: {avg_val:.4f} | Val MAPE: {avg_mape*100:.2f}%")
+        logger.info(
+            f"Epoch {epoch} done in {elapsed:.1f}s - Train Loss: {avg_train:.4f} | Val Loss: {avg_val:.4f} | Val MAPE: {avg_mape * 100:.2f}%")
 
         scheduler.step(avg_val)
 
@@ -115,8 +123,10 @@ def main():
             best_val_mape = avg_mape
             ckpt_path = os.path.join(PROJECT_ROOT, 'best_model_densenet.pth')
             torch.save(model.state_dict(), ckpt_path)
+            logger.info(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape*100:.2f}%)")
             print(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape*100:.2f}%)")
 
+    logger.info("\nTraining complete.")
     print("\nTraining complete.")
 
 if __name__ == '__main__':
