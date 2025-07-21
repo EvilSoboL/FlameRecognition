@@ -1,0 +1,260 @@
+INFO:root:
+Epoch 1/70
+INFO:root:
+Epoch 1/70
+INFO:root:Epoch 1 done in 354.2s - Train Loss: 652819.5768 | Val Loss: 673018.5625 | Val MAPE: 98.16%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 98.16%)
+INFO:root:
+Epoch 2/70
+INFO:root:Epoch 2 done in 350.7s - Train Loss: 626404.0885 | Val Loss: 635596.7727 | Val MAPE: 95.27%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 95.27%)
+INFO:root:
+Epoch 3/70
+INFO:root:Epoch 3 done in 348.0s - Train Loss: 582070.3581 | Val Loss: 586891.4290 | Val MAPE: 91.95%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 91.95%)
+INFO:root:
+Epoch 4/70
+INFO:root:Epoch 4 done in 348.6s - Train Loss: 522870.6691 | Val Loss: 498664.4545 | Val MAPE: 83.48%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 83.48%)
+INFO:root:
+Epoch 5/70
+INFO:root:Epoch 5 done in 349.2s - Train Loss: 453123.4906 | Val Loss: 426521.2812 | Val MAPE: 75.19%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 75.19%)
+INFO:root:
+Epoch 6/70
+INFO:root:Epoch 6 done in 347.8s - Train Loss: 379694.5305 | Val Loss: 359304.8693 | Val MAPE: 67.61%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 67.61%)
+INFO:root:
+Epoch 7/70
+INFO:root:Epoch 7 done in 346.8s - Train Loss: 306272.2201 | Val Loss: 278731.5952 | Val MAPE: 54.19%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 54.19%)
+INFO:root:
+Epoch 8/70
+INFO:root:Epoch 8 done in 348.7s - Train Loss: 240284.0011 | Val Loss: 204697.9347 | Val MAPE: 44.08%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 44.08%)
+INFO:root:
+Epoch 9/70
+INFO:root:Epoch 9 done in 350.1s - Train Loss: 181447.3694 | Val Loss: 149552.8324 | Val MAPE: 39.18%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 39.18%)
+INFO:root:
+Epoch 10/70
+INFO:root:Epoch 10 done in 349.5s - Train Loss: 135986.2175 | Val Loss: 115587.2344 | Val MAPE: 40.20%
+INFO:root:
+Epoch 11/70
+INFO:root:Epoch 11 done in 347.5s - Train Loss: 100133.7519 | Val Loss: 85413.6889 | Val MAPE: 35.93%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 35.93%)
+INFO:root:
+Epoch 12/70
+INFO:root:Epoch 12 done in 347.4s - Train Loss: 77221.6476 | Val Loss: 79222.7081 | Val MAPE: 34.99%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 34.99%)
+INFO:root:
+Epoch 13/70
+INFO:root:Epoch 13 done in 348.7s - Train Loss: 59821.2608 | Val Loss: 48184.4872 | Val MAPE: 39.80%
+INFO:root:
+Epoch 14/70
+INFO:root:Epoch 14 done in 350.2s - Train Loss: 47179.8203 | Val Loss: 45689.3164 | Val MAPE: 33.33%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 33.33%)
+INFO:root:
+Epoch 15/70
+INFO:root:Epoch 15 done in 349.7s - Train Loss: 40202.9467 | Val Loss: 38717.9119 | Val MAPE: 34.15%
+INFO:root:
+Epoch 16/70
+INFO:root:Epoch 16 done in 348.6s - Train Loss: 34893.2181 | Val Loss: 33464.5932 | Val MAPE: 33.07%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 33.07%)
+INFO:root:
+Epoch 17/70
+INFO:root:Epoch 17 done in 348.8s - Train Loss: 32819.6163 | Val Loss: 31725.3533 | Val MAPE: 32.15%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 32.15%)
+INFO:root:
+Epoch 18/70
+INFO:root:Epoch 18 done in 347.5s - Train Loss: 30930.3979 | Val Loss: 30103.9162 | Val MAPE: 33.79%
+INFO:root:
+Epoch 19/70
+INFO:root:Epoch 19 done in 347.9s - Train Loss: 30093.6807 | Val Loss: 29438.1889 | Val MAPE: 32.52%
+INFO:root:
+Epoch 20/70
+INFO:root:Epoch 20 done in 348.0s - Train Loss: 29492.0709 | Val Loss: 31063.5724 | Val MAPE: 30.11%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 30.11%)
+INFO:root:
+Epoch 21/70
+INFO:root:Epoch 21 done in 346.9s - Train Loss: 28108.3873 | Val Loss: 31411.7971 | Val MAPE: 34.87%
+INFO:root:
+Epoch 22/70
+INFO:root:Epoch 22 done in 348.1s - Train Loss: 28248.4409 | Val Loss: 29231.0994 | Val MAPE: 31.98%
+INFO:root:
+Epoch 23/70
+INFO:root:Epoch 23 done in 346.6s - Train Loss: 28000.7321 | Val Loss: 29585.4636 | Val MAPE: 31.25%
+INFO:root:
+Epoch 24/70
+INFO:root:Epoch 24 done in 346.8s - Train Loss: 27403.8849 | Val Loss: 31138.3072 | Val MAPE: 29.31%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 29.31%)
+INFO:root:
+Epoch 25/70
+INFO:root:Epoch 25 done in 349.1s - Train Loss: 27733.1035 | Val Loss: 29665.8306 | Val MAPE: 30.54%
+INFO:root:
+Epoch 26/70
+INFO:root:Epoch 26 done in 345.7s - Train Loss: 26444.0096 | Val Loss: 28650.8320 | Val MAPE: 29.72%
+INFO:root:
+Epoch 27/70
+INFO:root:Epoch 27 done in 348.5s - Train Loss: 25610.5090 | Val Loss: 28148.1143 | Val MAPE: 29.62%
+INFO:root:
+Epoch 28/70
+INFO:root:Epoch 28 done in 346.5s - Train Loss: 26553.1076 | Val Loss: 29222.7235 | Val MAPE: 30.70%
+INFO:root:
+Epoch 29/70
+INFO:root:Epoch 29 done in 346.7s - Train Loss: 26209.5822 | Val Loss: 31706.2939 | Val MAPE: 28.32%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 28.32%)
+INFO:root:
+Epoch 30/70
+INFO:root:Epoch 30 done in 345.9s - Train Loss: 25194.2542 | Val Loss: 28327.1032 | Val MAPE: 29.60%
+INFO:root:
+Epoch 31/70
+INFO:root:Epoch 31 done in 346.8s - Train Loss: 24629.1240 | Val Loss: 27818.0653 | Val MAPE: 29.21%
+INFO:root:
+Epoch 32/70
+INFO:root:Epoch 32 done in 346.5s - Train Loss: 25230.8091 | Val Loss: 28951.2116 | Val MAPE: 31.50%
+INFO:root:
+Epoch 33/70
+INFO:root:Epoch 33 done in 347.7s - Train Loss: 25597.6027 | Val Loss: 27944.4972 | Val MAPE: 29.42%
+INFO:root:
+Epoch 34/70
+INFO:root:Epoch 34 done in 347.6s - Train Loss: 24999.6277 | Val Loss: 27535.2296 | Val MAPE: 28.15%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 28.15%)
+INFO:root:
+Epoch 35/70
+INFO:root:Epoch 35 done in 345.8s - Train Loss: 24030.0485 | Val Loss: 26639.6009 | Val MAPE: 28.70%
+INFO:root:
+Epoch 36/70
+INFO:root:Epoch 36 done in 343.5s - Train Loss: 23001.3681 | Val Loss: 26233.9807 | Val MAPE: 27.82%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 27.82%)
+INFO:root:
+Epoch 37/70
+INFO:root:Epoch 37 done in 345.9s - Train Loss: 21884.3761 | Val Loss: 23951.5922 | Val MAPE: 27.40%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 27.40%)
+INFO:root:
+Epoch 38/70
+INFO:root:Epoch 38 done in 346.0s - Train Loss: 21241.1352 | Val Loss: 22958.2190 | Val MAPE: 27.10%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 27.10%)
+INFO:root:
+Epoch 39/70
+INFO:root:Epoch 39 done in 341.6s - Train Loss: 20122.8841 | Val Loss: 21928.1180 | Val MAPE: 25.72%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 25.72%)
+INFO:root:
+Epoch 40/70
+INFO:root:Epoch 40 done in 343.5s - Train Loss: 18777.9374 | Val Loss: 20171.6444 | Val MAPE: 25.21%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 25.21%)
+INFO:root:
+Epoch 41/70
+INFO:root:Epoch 41 done in 342.5s - Train Loss: 17585.1502 | Val Loss: 19796.9073 | Val MAPE: 23.85%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 23.85%)
+INFO:root:
+Epoch 42/70
+INFO:root:Epoch 42 done in 334.5s - Train Loss: 16522.1955 | Val Loss: 17663.8953 | Val MAPE: 22.61%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 22.61%)
+INFO:root:
+Epoch 43/70
+INFO:root:Epoch 43 done in 328.9s - Train Loss: 15145.2010 | Val Loss: 15667.0695 | Val MAPE: 21.70%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 21.70%)
+INFO:root:
+Epoch 44/70
+INFO:root:Epoch 44 done in 327.6s - Train Loss: 13788.6202 | Val Loss: 14458.4256 | Val MAPE: 20.61%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 20.61%)
+INFO:root:
+Epoch 45/70
+INFO:root:Epoch 45 done in 327.0s - Train Loss: 12496.4541 | Val Loss: 13025.5431 | Val MAPE: 19.93%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 19.93%)
+INFO:root:
+Epoch 46/70
+INFO:root:Epoch 46 done in 330.0s - Train Loss: 11394.1645 | Val Loss: 11709.5703 | Val MAPE: 18.25%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 18.25%)
+INFO:root:
+Epoch 47/70
+INFO:root:Epoch 47 done in 339.2s - Train Loss: 9823.4566 | Val Loss: 11031.8026 | Val MAPE: 17.45%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 17.45%)
+INFO:root:
+Epoch 48/70
+INFO:root:Epoch 48 done in 343.0s - Train Loss: 8597.5937 | Val Loss: 9317.1914 | Val MAPE: 15.52%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 15.52%)
+INFO:root:
+Epoch 49/70
+INFO:root:Epoch 49 done in 345.5s - Train Loss: 7717.9062 | Val Loss: 8384.3260 | Val MAPE: 14.07%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 14.07%)
+INFO:root:
+Epoch 50/70
+INFO:root:Epoch 50 done in 347.2s - Train Loss: 6593.6319 | Val Loss: 5679.7274 | Val MAPE: 12.96%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 12.96%)
+INFO:root:
+Epoch 51/70
+INFO:root:Epoch 51 done in 346.6s - Train Loss: 5331.2182 | Val Loss: 6425.2024 | Val MAPE: 11.65%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 11.65%)
+INFO:root:
+Epoch 52/70
+INFO:root:Epoch 52 done in 345.3s - Train Loss: 4874.1966 | Val Loss: 4385.9866 | Val MAPE: 10.41%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 10.41%)
+INFO:root:
+Epoch 53/70
+INFO:root:Epoch 53 done in 345.9s - Train Loss: 3716.3115 | Val Loss: 4128.7239 | Val MAPE: 9.50%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 9.50%)
+INFO:root:
+Epoch 54/70
+INFO:root:Epoch 54 done in 346.5s - Train Loss: 3769.2056 | Val Loss: 4747.8812 | Val MAPE: 8.58%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 8.58%)
+INFO:root:
+Epoch 55/70
+INFO:root:Epoch 55 done in 347.0s - Train Loss: 4409.8689 | Val Loss: 4453.0487 | Val MAPE: 8.65%
+INFO:root:
+Epoch 56/70
+INFO:root:Epoch 56 done in 343.5s - Train Loss: 4002.5968 | Val Loss: 2720.5086 | Val MAPE: 6.69%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 6.69%)
+INFO:root:
+Epoch 57/70
+INFO:root:Epoch 57 done in 344.3s - Train Loss: 5033.4509 | Val Loss: 18308.6333 | Val MAPE: 19.76%
+INFO:root:
+Epoch 58/70
+INFO:root:Epoch 58 done in 345.5s - Train Loss: 4597.0782 | Val Loss: 3282.8132 | Val MAPE: 7.11%
+INFO:root:
+Epoch 59/70
+INFO:root:Epoch 59 done in 345.0s - Train Loss: 3100.8035 | Val Loss: 2833.1474 | Val MAPE: 6.75%
+INFO:root:
+Epoch 60/70
+INFO:root:Epoch 60 done in 343.8s - Train Loss: 2203.4241 | Val Loss: 2335.4192 | Val MAPE: 5.43%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 5.43%)
+INFO:root:
+Epoch 61/70
+INFO:root:Epoch 61 done in 345.3s - Train Loss: 2210.2725 | Val Loss: 2839.6508 | Val MAPE: 5.87%
+INFO:root:
+Epoch 62/70
+INFO:root:Epoch 62 done in 347.0s - Train Loss: 1638.9179 | Val Loss: 2139.1409 | Val MAPE: 5.37%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 5.37%)
+INFO:root:
+Epoch 63/70
+INFO:root:Epoch 63 done in 346.2s - Train Loss: 1675.9806 | Val Loss: 2111.3377 | Val MAPE: 5.23%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 5.23%)
+INFO:root:
+Epoch 64/70
+INFO:root:Epoch 64 done in 347.5s - Train Loss: 1369.6923 | Val Loss: 1498.4501 | Val MAPE: 4.42%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 4.42%)
+INFO:root:
+Epoch 65/70
+INFO:root:Epoch 65 done in 345.9s - Train Loss: 1319.7379 | Val Loss: 1485.6466 | Val MAPE: 4.19%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 4.19%)
+INFO:root:
+Epoch 66/70
+INFO:root:Epoch 66 done in 346.4s - Train Loss: 1411.2110 | Val Loss: 1644.5877 | Val MAPE: 4.55%
+INFO:root:
+Epoch 67/70
+INFO:root:Epoch 67 done in 346.1s - Train Loss: 827.2860 | Val Loss: 1374.9050 | Val MAPE: 4.26%
+INFO:root:
+Epoch 68/70
+INFO:root:Epoch 68 done in 345.9s - Train Loss: 995.6579 | Val Loss: 1711.8325 | Val MAPE: 4.32%
+INFO:root:
+Epoch 69/70
+INFO:root:Epoch 69 done in 347.8s - Train Loss: 1004.4293 | Val Loss: 1740.7176 | Val MAPE: 4.44%
+INFO:root:
+Epoch 70/70
+INFO:root:Epoch 70 done in 347.5s - Train Loss: 783.2501 | Val Loss: 1186.1618 | Val MAPE: 3.38%
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\best_model_densenet.pth (Val MAPE: 3.38%)
+INFO:root:
+Training complete.
+INFO:root:
+Epoch 1/70

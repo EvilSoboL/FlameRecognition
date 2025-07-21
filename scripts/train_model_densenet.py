@@ -68,12 +68,12 @@ def main():
     best_val_mape = float('inf')
     print(f"Starting training for {NUM_EPOCHS} epochs with DenseNet121...")
 
-    logging.basicConfig(filename='training.log', level=logging.INFO)
+    logging.basicConfig(filename='training.log', level=logging.INFO, filemode='a')
     logger = logging.getLogger()
 
     for epoch in range(1, NUM_EPOCHS + 1):
         start_time = time.time()
-        logger.info(f"\nEpoch {epoch}/{NUM_EPOCHS}")
+        logging.info(f"\nEpoch {epoch}/{NUM_EPOCHS}")
         print(f"\nEpoch {epoch}/{NUM_EPOCHS}")
 
         # ===== TRAIN =====
@@ -112,8 +112,9 @@ def main():
         avg_mape  = sum(val_maps) / len(val_maps)
         elapsed = time.time() - start_time
 
-        print(f"Epoch {epoch} done in {elapsed:.1f}s - Train Loss: {avg_train:.4f} | Val Loss: {avg_val:.4f} | Val MAPE: {avg_mape*100:.2f}%")
-        logger.info(
+        print(
+            f"Epoch {epoch} done in {elapsed:.1f}s - Train Loss: {avg_train:.4f} | Val Loss: {avg_val:.4f} | Val MAPE: {avg_mape * 100:.2f}%")
+        logging.info(
             f"Epoch {epoch} done in {elapsed:.1f}s - Train Loss: {avg_train:.4f} | Val Loss: {avg_val:.4f} | Val MAPE: {avg_mape * 100:.2f}%")
 
         scheduler.step(avg_val)
@@ -126,7 +127,7 @@ def main():
             logger.info(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape*100:.2f}%)")
             print(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape*100:.2f}%)")
 
-    logger.info("\nTraining complete.")
+    logging.info("\nTraining complete.")
     print("\nTraining complete.")
 
 if __name__ == '__main__':
