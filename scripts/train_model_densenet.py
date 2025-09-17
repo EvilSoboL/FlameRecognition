@@ -12,6 +12,7 @@ import logging
 import csv
 import matplotlib.pyplot as plt
 from datetime import datetime
+from PIL import Image
 
 # Параметры
 BATCH_SIZE = 16
@@ -19,8 +20,28 @@ NUM_EPOCHS = 70
 LR = 1e-4
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-# Трансформы
+class ManualCrop:
+    """Кастомный трансформ: ручной кроп с масштабом и смещением"""
+    def __init__(self, scale=0.6, offset_x=200, offset_y=-300):
+        self.scale = scale
+        self.offset_x = offset_x
+        self.offset_y = offset_y
+
+    def __call__(self, img: Image.Image):
+        w, h = img.size
+        new_w = int(w * self.scale)
+        new_h = int(h * self.scale)
+        center_x = w // 2 + self.offset_x
+        center_y = h // 2 + self.offset_y
+        left   = max(0, center_x - new_w // 2)
+        top    = max(0, center_y - new_h // 2)
+        right  = min(w, center_x + new_w // 2)
+        bottom = min(h, center_y + new_h // 2)
+        return img.crop((left, top, right, bottom))
+
+# === Обновленные трансформы ===
 train_transform = transforms.Compose([
+    ManualCrop(),  # <-- добавляем ручной кроп
     transforms.Resize((256,256)),
     transforms.RandomResizedCrop(224, scale=(0.9,1.0)),
     transforms.ColorJitter(brightness=0.2, contrast=0.2),
@@ -29,6 +50,7 @@ train_transform = transforms.Compose([
 ])
 
 eval_transform = transforms.Compose([
+    ManualCrop(),  # <-- ручной кроп и на валидации
     transforms.Resize((224,224)),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])
