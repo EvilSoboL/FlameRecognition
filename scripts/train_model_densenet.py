@@ -191,10 +191,12 @@ def main():
         # Checkpoint при улучшении MAPE
         if avg_mape < best_val_mape:
             best_val_mape = avg_mape
-            ckpt_path = os.path.join(run_dir, 'best_model_densenet.pth')
+            # Добавляем timestamp к имени модели
+            model_filename = f'best_model_densenet_epoch{epoch}_{datetime.now().strftime("%Y%m%d_%H%M%S")}.pth'
+            ckpt_path = os.path.join(run_dir, model_filename)
             torch.save(model.state_dict(), ckpt_path)
-            logger.info(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape*100:.2f}%)")
-            print(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape*100:.2f}%)")
+            logger.info(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape * 100:.2f}%)")
+            print(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape * 100:.2f}%)")
 
     logging.info("\nTraining complete.")
     print("\nTraining complete.")

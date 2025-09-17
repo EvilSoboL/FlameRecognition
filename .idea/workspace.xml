@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="2.0 - Запись данных об обучении модели в txt и csv">
+    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="2.1 - Обрезка исходных изображений">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/Предобработка изображения.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Предобработка изображения.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/train_model_densenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/train_model_densenet.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758092056320</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2.1 - Обрезка исходных изображений">
+      <option name="closed" value="true" />
+      <created>1758095555366</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1758095555366</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +250,8 @@
     <MESSAGE value="1.4 - новая densenet модель Train Loss: 783.2501 | Val Loss: 1186.1618 | Val MAPE: 3.38%" />
     <MESSAGE value="1.5 - Ноутбук с этапами предобработки данных" />
     <MESSAGE value="2.0 - Запись данных об обучении модели в txt и csv" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0 - Запись данных об обучении модели в txt и csv" />
+    <MESSAGE value="2.1 - Обрезка исходных изображений" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.1 - Обрезка исходных изображений" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FlameRecognition$train_model_densenet.coverage" NAME="train_model_densenet Coverage Results" MODIFIED="1751882510740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
