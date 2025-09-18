@@ -20,28 +20,9 @@ NUM_EPOCHS = 70
 LR = 1e-4
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-class ManualCrop:
-    """Кастомный трансформ: ручной кроп с масштабом и смещением"""
-    def __init__(self, scale=0.6, offset_x=200, offset_y=-300):
-        self.scale = scale
-        self.offset_x = offset_x
-        self.offset_y = offset_y
-
-    def __call__(self, img: Image.Image):
-        w, h = img.size
-        new_w = int(w * self.scale)
-        new_h = int(h * self.scale)
-        center_x = w // 2 + self.offset_x
-        center_y = h // 2 + self.offset_y
-        left   = max(0, center_x - new_w // 2)
-        top    = max(0, center_y - new_h // 2)
-        right  = min(w, center_x + new_w // 2)
-        bottom = min(h, center_y + new_h // 2)
-        return img.crop((left, top, right, bottom))
 
 # === Обновленные трансформы ===
 train_transform = transforms.Compose([
-    ManualCrop(),  # <-- добавляем ручной кроп
     transforms.Resize((256,256)),
     transforms.RandomResizedCrop(224, scale=(0.9,1.0)),
     transforms.ColorJitter(brightness=0.2, contrast=0.2),
@@ -50,7 +31,6 @@ train_transform = transforms.Compose([
 ])
 
 eval_transform = transforms.Compose([
-    ManualCrop(),  # <-- ручной кроп и на валидации
     transforms.Resize((224,224)),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])
@@ -86,6 +66,25 @@ def main():
     val_ds   = FlameDataset(val_csv,   transform=eval_transform)
     train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
     val_loader   = DataLoader(val_ds,   batch_size=BATCH_SIZE, shuffle=False, num_workers=4)
+
+    # Датасеты и загрузчики
+    train_ds = FlameDataset(train_csv, transform=train_transform)
+    val_ds   = FlameDataset(val_csv,   transform=eval_transform)
+    train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
+    val_loader   = DataLoader(val_ds,   batch_size=BATCH_SIZE, shuffle=False, num_workers=4)
+
+    # === Сохраняем первое изображение после трансформов ===
+    first_img, first_label = next(iter(train_loader))  # берём первую партию
+    img_tensor = first_img[0].cpu()  # первое изображение из батча
+    # Обратно денормализуем
+    mean = torch.tensor([0.485, 0.456, 0.406]).view(3,1,1)
+    std  = torch.tensor([0.229, 0.224, 0.225]).view(3,1,1)
+    img_denorm = img_tensor * std + mean
+    img_denorm = img_denorm.clamp(0,1)  # ограничиваем значения
+    # Сохраняем
+    plt.imsave(os.path.join(run_dir, "first_input.png"), img_denorm.permute(1,2,0).numpy())
+    print(f"Saved first input image to {os.path.join(run_dir, 'first_input.png')}")
+
 
     # Модель: DenseNet121
     print(f"Using device: {DEVICE}")

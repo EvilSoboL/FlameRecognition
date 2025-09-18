@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="2.2 - Сохранение модели в runs">
+    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="2.3 - best_model_densenet_epoch70_20250918_010519.pth">
+      <change afterPath="$PROJECT_DIR$/runs/run_2025-09-18_12-42-44/first_input.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/crop_images.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/prepare_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/prepare_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/train_model_densenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/train_model_densenet.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,37 +46,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.check_data_loading.executor&quot;: &quot;Run&quot;,
-    &quot;Python.infer_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.prepare_csv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_model_densenet.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/evils/PycharmProjects/FlameRecognition&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.check_data_loading.executor": "Run",
+    "Python.crop_images.executor": "Run",
+    "Python.infer_model.executor": "Run",
+    "Python.prepare_csv.executor": "Run",
+    "Python.train_model.executor": "Run",
+    "Python.train_model_densenet.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/evils/PycharmProjects/FlameRecognition",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\evils\PycharmProjects\FlameRecognition\data\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-18_12-42-44" />
       <recent name="C:\Users\evils\PycharmProjects\FlameRecognition\scripts" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.prepare_csv">
+    <configuration name="crop_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FlameRecognition" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/crop_images.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FlameRecognition" />
       <option name="ENV_FILES" value="" />
@@ -88,6 +116,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="C:\Users\evils\PycharmProjects\FlameRecognition\scripts\dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prepare_csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FlameRecognition" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/prepare_csv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,6 +171,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.prepare_csv" />
+        <item itemvalue="Python.crop_images" />
         <item itemvalue="Python.train_model" />
         <item itemvalue="Python.dataset" />
       </list>
@@ -241,7 +293,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758099867162</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2.3 - best_model_densenet_epoch70_20250918_010519.pth">
+      <option name="closed" value="true" />
+      <created>1758173882183</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1758173882183</updated>
+    </task>
+    <task id="LOCAL-00014" summary="2.3 - best_model_densenet_epoch70_20250918_010519.pth">
+      <option name="closed" value="true" />
+      <created>1758173995307</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1758173995307</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +328,8 @@
     <MESSAGE value="2.0 - Запись данных об обучении модели в txt и csv" />
     <MESSAGE value="2.1 - Обрезка исходных изображений" />
     <MESSAGE value="2.2 - Сохранение модели в runs" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.2 - Сохранение модели в runs" />
+    <MESSAGE value="2.3 - best_model_densenet_epoch70_20250918_010519.pth" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.3 - best_model_densenet_epoch70_20250918_010519.pth" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FlameRecognition$train_model_densenet.coverage" NAME="train_model_densenet Coverage Results" MODIFIED="1751882510740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
