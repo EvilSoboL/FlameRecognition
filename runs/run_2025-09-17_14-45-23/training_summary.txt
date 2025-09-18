@@ -1,0 +1,6 @@
+Training started
+Model: DenseNet121
+Device: cpu
+Batch size: 16, Epochs: 70, LR: 0.0001
+
+Epoch 1/70 - Train Loss: 651290.2741, Val Loss: 675207.0341, Val MAPE: 98.46%, Time: 366.5s, LR: 1.00e-04

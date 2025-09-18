@@ -1,0 +1,77 @@
+Training started
+Model: DenseNet121
+Device: cpu
+Batch size: 16, Epochs: 70, LR: 0.0001
+
+Epoch 1/70 - Train Loss: 652715.4435, Val Loss: 676685.3523, Val MAPE: 98.56%, Time: 345.2s, LR: 1.00e-04
+Epoch 2/70 - Train Loss: 626359.1171, Val Loss: 632786.0625, Val MAPE: 95.07%, Time: 349.6s, LR: 1.00e-04
+Epoch 3/70 - Train Loss: 581519.5154, Val Loss: 587060.4517, Val MAPE: 91.02%, Time: 345.2s, LR: 1.00e-04
+Epoch 4/70 - Train Loss: 521573.8291, Val Loss: 503747.1676, Val MAPE: 83.07%, Time: 348.6s, LR: 1.00e-04
+Epoch 5/70 - Train Loss: 451861.3769, Val Loss: 436294.5938, Val MAPE: 77.12%, Time: 349.1s, LR: 1.00e-04
+Epoch 6/70 - Train Loss: 378011.7604, Val Loss: 388348.8892, Val MAPE: 69.06%, Time: 346.5s, LR: 1.00e-04
+Epoch 7/70 - Train Loss: 304197.5237, Val Loss: 266179.5014, Val MAPE: 52.19%, Time: 348.0s, LR: 1.00e-04
+Epoch 8/70 - Train Loss: 235126.5839, Val Loss: 208036.8480, Val MAPE: 45.13%, Time: 349.0s, LR: 1.00e-04
+Epoch 9/70 - Train Loss: 176037.0263, Val Loss: 138213.8857, Val MAPE: 39.58%, Time: 347.4s, LR: 1.00e-04
+Epoch 10/70 - Train Loss: 131464.3413, Val Loss: 109824.2607, Val MAPE: 36.68%, Time: 348.7s, LR: 1.00e-04
+Epoch 11/70 - Train Loss: 96658.0499, Val Loss: 80522.2301, Val MAPE: 34.13%, Time: 348.7s, LR: 1.00e-04
+Epoch 12/70 - Train Loss: 72475.2586, Val Loss: 55755.1568, Val MAPE: 36.00%, Time: 348.6s, LR: 1.00e-04
+Epoch 13/70 - Train Loss: 54857.4573, Val Loss: 50799.9135, Val MAPE: 35.31%, Time: 346.4s, LR: 1.00e-04
+Epoch 14/70 - Train Loss: 47307.0190, Val Loss: 43167.3345, Val MAPE: 39.39%, Time: 347.9s, LR: 1.00e-04
+Epoch 15/70 - Train Loss: 39812.9564, Val Loss: 37432.3663, Val MAPE: 33.88%, Time: 346.3s, LR: 1.00e-04
+Epoch 16/70 - Train Loss: 33963.2990, Val Loss: 32744.4929, Val MAPE: 33.16%, Time: 346.5s, LR: 1.00e-04
+Epoch 17/70 - Train Loss: 33252.9215, Val Loss: 35350.9606, Val MAPE: 30.89%, Time: 346.9s, LR: 1.00e-04
+Epoch 18/70 - Train Loss: 31257.7370, Val Loss: 35205.1969, Val MAPE: 32.93%, Time: 349.2s, LR: 1.00e-04
+Epoch 19/70 - Train Loss: 30661.9928, Val Loss: 33224.7786, Val MAPE: 30.05%, Time: 343.7s, LR: 1.00e-04
+Epoch 20/70 - Train Loss: 28883.0213, Val Loss: 32959.4913, Val MAPE: 34.90%, Time: 344.9s, LR: 1.00e-04
+Epoch 21/70 - Train Loss: 28252.2372, Val Loss: 29853.7029, Val MAPE: 30.91%, Time: 348.9s, LR: 5.00e-05
+Epoch 22/70 - Train Loss: 28159.2266, Val Loss: 30044.2960, Val MAPE: 30.53%, Time: 346.9s, LR: 5.00e-05
+Epoch 23/70 - Train Loss: 28625.7716, Val Loss: 30078.7727, Val MAPE: 30.25%, Time: 344.6s, LR: 5.00e-05
+Epoch 24/70 - Train Loss: 27474.7793, Val Loss: 30068.4949, Val MAPE: 29.90%, Time: 347.3s, LR: 5.00e-05
+Epoch 25/70 - Train Loss: 26945.1536, Val Loss: 29587.5959, Val MAPE: 31.42%, Time: 352.7s, LR: 5.00e-05
+Epoch 26/70 - Train Loss: 27375.1509, Val Loss: 30363.3445, Val MAPE: 31.25%, Time: 346.0s, LR: 5.00e-05
+Epoch 27/70 - Train Loss: 25706.6921, Val Loss: 29841.7971, Val MAPE: 30.00%, Time: 344.2s, LR: 5.00e-05
+Epoch 28/70 - Train Loss: 26075.8362, Val Loss: 29509.7012, Val MAPE: 30.86%, Time: 346.3s, LR: 5.00e-05
+Epoch 29/70 - Train Loss: 26693.8662, Val Loss: 29428.4407, Val MAPE: 30.82%, Time: 345.4s, LR: 5.00e-05
+Epoch 30/70 - Train Loss: 25440.4696, Val Loss: 29572.3072, Val MAPE: 30.67%, Time: 344.6s, LR: 5.00e-05
+Epoch 31/70 - Train Loss: 25434.8791, Val Loss: 32003.8750, Val MAPE: 28.90%, Time: 344.1s, LR: 5.00e-05
+Epoch 32/70 - Train Loss: 25354.8911, Val Loss: 29306.8359, Val MAPE: 30.04%, Time: 345.3s, LR: 5.00e-05
+Epoch 33/70 - Train Loss: 25091.7635, Val Loss: 30517.1023, Val MAPE: 29.82%, Time: 343.0s, LR: 5.00e-05
+Epoch 34/70 - Train Loss: 24772.5709, Val Loss: 29972.0797, Val MAPE: 29.81%, Time: 344.4s, LR: 5.00e-05
+Epoch 35/70 - Train Loss: 24869.8035, Val Loss: 29329.2981, Val MAPE: 30.20%, Time: 346.9s, LR: 5.00e-05
+Epoch 36/70 - Train Loss: 24541.5299, Val Loss: 29121.6035, Val MAPE: 29.83%, Time: 344.6s, LR: 5.00e-05
+Epoch 37/70 - Train Loss: 24345.4487, Val Loss: 30057.6090, Val MAPE: 28.97%, Time: 344.5s, LR: 5.00e-05
+Epoch 38/70 - Train Loss: 24347.5780, Val Loss: 28913.8833, Val MAPE: 29.92%, Time: 345.4s, LR: 5.00e-05
+Epoch 39/70 - Train Loss: 24081.7466, Val Loss: 28764.5774, Val MAPE: 30.53%, Time: 346.2s, LR: 5.00e-05
+Epoch 40/70 - Train Loss: 24187.6484, Val Loss: 28457.8310, Val MAPE: 30.51%, Time: 344.9s, LR: 5.00e-05
+Epoch 41/70 - Train Loss: 24150.6861, Val Loss: 28221.2211, Val MAPE: 29.52%, Time: 345.4s, LR: 5.00e-05
+Epoch 42/70 - Train Loss: 24093.0907, Val Loss: 28653.5277, Val MAPE: 28.79%, Time: 346.1s, LR: 5.00e-05
+Epoch 43/70 - Train Loss: 23756.9613, Val Loss: 28659.7656, Val MAPE: 28.98%, Time: 345.5s, LR: 5.00e-05
+Epoch 44/70 - Train Loss: 23682.4619, Val Loss: 27900.5625, Val MAPE: 29.05%, Time: 347.1s, LR: 5.00e-05
+Epoch 45/70 - Train Loss: 22993.4285, Val Loss: 27495.1143, Val MAPE: 29.31%, Time: 343.4s, LR: 5.00e-05
+Epoch 46/70 - Train Loss: 22769.6124, Val Loss: 26986.6188, Val MAPE: 28.39%, Time: 345.3s, LR: 5.00e-05
+Epoch 47/70 - Train Loss: 22492.8710, Val Loss: 26710.8003, Val MAPE: 27.80%, Time: 343.5s, LR: 5.00e-05
+Epoch 48/70 - Train Loss: 21627.9569, Val Loss: 25960.6933, Val MAPE: 27.76%, Time: 345.0s, LR: 5.00e-05
+Epoch 49/70 - Train Loss: 21418.6409, Val Loss: 25059.5042, Val MAPE: 27.85%, Time: 343.4s, LR: 5.00e-05
+Epoch 50/70 - Train Loss: 20565.3199, Val Loss: 24727.3295, Val MAPE: 26.93%, Time: 344.8s, LR: 5.00e-05
+Epoch 51/70 - Train Loss: 20433.8676, Val Loss: 23253.9635, Val MAPE: 27.38%, Time: 345.1s, LR: 5.00e-05
+Epoch 52/70 - Train Loss: 20006.3996, Val Loss: 22803.2943, Val MAPE: 26.43%, Time: 345.3s, LR: 5.00e-05
+Epoch 53/70 - Train Loss: 18865.9584, Val Loss: 21576.6072, Val MAPE: 25.75%, Time: 346.7s, LR: 5.00e-05
+Epoch 54/70 - Train Loss: 17954.2224, Val Loss: 20765.9241, Val MAPE: 24.80%, Time: 345.1s, LR: 5.00e-05
+Epoch 55/70 - Train Loss: 17141.9103, Val Loss: 20243.7507, Val MAPE: 24.53%, Time: 345.3s, LR: 5.00e-05
+Epoch 56/70 - Train Loss: 16623.6881, Val Loss: 18745.1889, Val MAPE: 23.33%, Time: 344.1s, LR: 5.00e-05
+Epoch 57/70 - Train Loss: 16023.4784, Val Loss: 18011.3580, Val MAPE: 23.66%, Time: 347.3s, LR: 5.00e-05
+Epoch 58/70 - Train Loss: 14946.3550, Val Loss: 16309.9223, Val MAPE: 22.22%, Time: 345.0s, LR: 5.00e-05
+Epoch 59/70 - Train Loss: 13673.5025, Val Loss: 16165.2685, Val MAPE: 21.59%, Time: 390.4s, LR: 5.00e-05
+Epoch 60/70 - Train Loss: 13142.4086, Val Loss: 14726.0052, Val MAPE: 20.15%, Time: 348.5s, LR: 5.00e-05
+Epoch 61/70 - Train Loss: 11787.2053, Val Loss: 13729.3192, Val MAPE: 19.04%, Time: 344.6s, LR: 5.00e-05
+Epoch 62/70 - Train Loss: 11141.2607, Val Loss: 12425.0988, Val MAPE: 18.53%, Time: 344.5s, LR: 5.00e-05
+Epoch 63/70 - Train Loss: 9947.4190, Val Loss: 10766.5217, Val MAPE: 17.66%, Time: 343.5s, LR: 5.00e-05
+Epoch 64/70 - Train Loss: 9006.6708, Val Loss: 10098.4954, Val MAPE: 16.51%, Time: 344.0s, LR: 5.00e-05
+Epoch 65/70 - Train Loss: 9136.6924, Val Loss: 8837.7815, Val MAPE: 16.14%, Time: 343.2s, LR: 5.00e-05
+Epoch 66/70 - Train Loss: 7812.4042, Val Loss: 8604.2964, Val MAPE: 15.38%, Time: 344.4s, LR: 5.00e-05
+Epoch 67/70 - Train Loss: 7302.8151, Val Loss: 7266.9103, Val MAPE: 14.19%, Time: 343.5s, LR: 5.00e-05
+Epoch 68/70 - Train Loss: 6708.5233, Val Loss: 6486.4902, Val MAPE: 13.46%, Time: 341.7s, LR: 5.00e-05
+Epoch 69/70 - Train Loss: 6099.1546, Val Loss: 7491.2504, Val MAPE: 13.10%, Time: 344.2s, LR: 5.00e-05
+Epoch 70/70 - Train Loss: 6315.7470, Val Loss: 7149.2847, Val MAPE: 12.97%, Time: 344.4s, LR: 5.00e-05
+
+Training complete.

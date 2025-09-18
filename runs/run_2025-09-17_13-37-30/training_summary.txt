@@ -1,0 +1,5 @@
+Training started
+Model: DenseNet121
+Device: cpu
+Batch size: 16, Epochs: 70, LR: 0.0001
+
