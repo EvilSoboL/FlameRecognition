@@ -1,0 +1,14 @@
+Training started
+Model: DenseNet121
+Device: cpu
+Dataset: cropped_images
+Batch size: 16, Epochs: 70, LR: 0.0001
+Target mean: [1415.66259765625, 631.3253173828125]
+Target std: [298.98724365234375, 381.3190612792969]
+
+Epoch 1/70 - Train Loss: 0.2719, Val Loss: 0.1301, Val MAPE: 16.03%, Time: 310.1s, LR: 1.00e-04
+Epoch 2/70 - Train Loss: 0.1553, Val Loss: 0.1027, Val MAPE: 15.28%, Time: 301.6s, LR: 1.00e-04
+Epoch 3/70 - Train Loss: 0.1286, Val Loss: 0.1097, Val MAPE: 13.01%, Time: 326.8s, LR: 1.00e-04
+Epoch 4/70 - Train Loss: 0.1166, Val Loss: 0.1024, Val MAPE: 11.40%, Time: 295.8s, LR: 1.00e-04
+Epoch 5/70 - Train Loss: 0.1051, Val Loss: 0.0885, Val MAPE: 10.44%, Time: 296.4s, LR: 1.00e-04
+Epoch 6/70 - Train Loss: 0.0930, Val Loss: 0.0581, Val MAPE: 10.02%, Time: 332.5s, LR: 1.00e-04

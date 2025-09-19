@@ -1,0 +1,27 @@
+INFO:root:Starting training for 70 epochs on dataset 'cropped_images'...
+INFO:root:
+Epoch 1/70
+INFO:root:Epoch 1 done in 310.1s - Train Loss: 0.2719 | Val Loss: 0.1301 | Val MAPE: 16.03% | LR: 1.00e-04
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch1_20250919_161441.pth (Val MAPE: 16.03%)
+INFO:root:
+Epoch 2/70
+INFO:root:Epoch 2 done in 301.6s - Train Loss: 0.1553 | Val Loss: 0.1027 | Val MAPE: 15.28% | LR: 1.00e-04
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch2_20250919_161943.pth (Val MAPE: 15.28%)
+INFO:root:
+Epoch 3/70
+INFO:root:Epoch 3 done in 326.8s - Train Loss: 0.1286 | Val Loss: 0.1097 | Val MAPE: 13.01% | LR: 1.00e-04
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch3_20250919_162510.pth (Val MAPE: 13.01%)
+INFO:root:
+Epoch 4/70
+INFO:root:Epoch 4 done in 295.8s - Train Loss: 0.1166 | Val Loss: 0.1024 | Val MAPE: 11.40% | LR: 1.00e-04
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch4_20250919_163006.pth (Val MAPE: 11.40%)
+INFO:root:
+Epoch 5/70
+INFO:root:Epoch 5 done in 296.4s - Train Loss: 0.1051 | Val Loss: 0.0885 | Val MAPE: 10.44% | LR: 1.00e-04
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch5_20250919_163503.pth (Val MAPE: 10.44%)
+INFO:root:
+Epoch 6/70
+INFO:root:Epoch 6 done in 332.5s - Train Loss: 0.0930 | Val Loss: 0.0581 | Val MAPE: 10.02% | LR: 1.00e-04
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch6_20250919_164036.pth (Val MAPE: 10.02%)
+INFO:root:
+Epoch 7/70
