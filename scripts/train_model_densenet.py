@@ -13,81 +13,75 @@ import csv
 import matplotlib.pyplot as plt
 from datetime import datetime
 from PIL import Image
+import argparse
 
-# Параметры
-BATCH_SIZE = 16
-NUM_EPOCHS = 70
-LR = 1e-4
-DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
-
-
-# === Обновленные трансформы ===
+# === Трансформы ===
 train_transform = transforms.Compose([
-    transforms.Resize((256,256)),
-    transforms.RandomResizedCrop(224, scale=(0.9,1.0)),
+    transforms.Resize((256, 256)),
+    transforms.RandomResizedCrop(224, scale=(0.9, 1.0)),
     transforms.ColorJitter(brightness=0.2, contrast=0.2),
     transforms.ToTensor(),
-    transforms.Normalize(mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])
+    transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                         std=[0.229, 0.224, 0.225])
 ])
 
 eval_transform = transforms.Compose([
-    transforms.Resize((224,224)),
+    transforms.Resize((224, 224)),
     transforms.ToTensor(),
-    transforms.Normalize(mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])
+    transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                         std=[0.229, 0.224, 0.225])
 ])
 
-# Функция MAPE
+# === Функция MAPE ===
 def mape_loss(preds, targets, eps=1e-6):
     return torch.mean(torch.abs((preds - targets) / (targets + eps)))
 
-# Основная функция обучения
-def main():
+
+def main(args):
     # Пути к данным
     PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
-    DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
-    train_csv = os.path.join(DATA_DIR, 'train.csv')
-    val_csv   = os.path.join(DATA_DIR, 'val.csv')
+    DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+
+    train_csv = os.path.join(DATA_DIR, f"{args.source}_train.csv")
+    val_csv   = os.path.join(DATA_DIR, f"{args.source}_val.csv")
+
+    if not os.path.isfile(train_csv) or not os.path.isfile(val_csv):
+        raise FileNotFoundError(
+            f"Не найдены {train_csv} или {val_csv}. Сначала сгенерируй датасет для '{args.source}'."
+        )
 
     # === Папка для результатов ===
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    run_dir = os.path.join(PROJECT_ROOT, "runs", f"run_{timestamp}")
+    run_dir = os.path.join(PROJECT_ROOT, "runs", f"run_{timestamp}_{args.source}")
     os.makedirs(run_dir, exist_ok=True)
 
     metrics_csv = os.path.join(run_dir, "training_metrics.csv")
     summary_txt = os.path.join(run_dir, "training_summary.txt")
 
-    # Создаем CSV и записываем заголовки
+    # CSV с заголовком
     with open(metrics_csv, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(["epoch", "train_loss", "val_loss", "val_mape(%)", "elapsed(s)", "lr"])
 
-    # Датасеты и загрузчики
+    # === Датасеты и загрузчики ===
     train_ds = FlameDataset(train_csv, transform=train_transform)
-    val_ds   = FlameDataset(val_csv,   transform=eval_transform)
-    train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
-    val_loader   = DataLoader(val_ds,   batch_size=BATCH_SIZE, shuffle=False, num_workers=4)
-
-    # Датасеты и загрузчики
-    train_ds = FlameDataset(train_csv, transform=train_transform)
-    val_ds   = FlameDataset(val_csv,   transform=eval_transform)
-    train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
-    val_loader   = DataLoader(val_ds,   batch_size=BATCH_SIZE, shuffle=False, num_workers=4)
+    val_ds   = FlameDataset(val_csv, transform=eval_transform)
+    train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, num_workers=4)
+    val_loader   = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, num_workers=4)
 
     # === Сохраняем первое изображение после трансформов ===
-    first_img, first_label = next(iter(train_loader))  # берём первую партию
-    img_tensor = first_img[0].cpu()  # первое изображение из батча
-    # Обратно денормализуем
-    mean = torch.tensor([0.485, 0.456, 0.406]).view(3,1,1)
-    std  = torch.tensor([0.229, 0.224, 0.225]).view(3,1,1)
+    first_img, first_label = next(iter(train_loader))
+    img_tensor = first_img[0].cpu()
+    mean = torch.tensor([0.485, 0.456, 0.406]).view(3, 1, 1)
+    std  = torch.tensor([0.229, 0.224, 0.225]).view(3, 1, 1)
     img_denorm = img_tensor * std + mean
-    img_denorm = img_denorm.clamp(0,1)  # ограничиваем значения
-    # Сохраняем
-    plt.imsave(os.path.join(run_dir, "first_input.png"), img_denorm.permute(1,2,0).numpy())
+    img_denorm = img_denorm.clamp(0, 1)
+    plt.imsave(os.path.join(run_dir, "first_input.png"), img_denorm.permute(1, 2, 0).numpy())
     print(f"Saved first input image to {os.path.join(run_dir, 'first_input.png')}")
 
-
-    # Модель: DenseNet121
-    print(f"Using device: {DEVICE}")
+    # === Модель: DenseNet121 ===
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    print(f"Using device: {device}")
     backbone = models.densenet121(weights=models.DenseNet121_Weights.DEFAULT)
     num_feats = backbone.classifier.in_features
     backbone.classifier = nn.Sequential(
@@ -95,40 +89,45 @@ def main():
         nn.ReLU(),
         nn.Linear(128, 2)
     )
-    model = backbone.to(DEVICE)
+    model = backbone.to(device)
 
     # Loss, optimizer, scheduler
     criterion = nn.MSELoss()
-    optimizer = optim.AdamW(model.parameters(), lr=LR)
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=3)
+    optimizer = optim.AdamW(model.parameters(), lr=args.lr)
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, mode='min', factor=0.5, patience=3
+    )
 
     best_val_mape = float('inf')
-    print(f"Starting training for {NUM_EPOCHS} epochs with DenseNet121...")
+    print(f"Starting training for {args.epochs} epochs on dataset '{args.source}'...")
 
-    logging.basicConfig(filename=os.path.join(run_dir, 'training.log'), level=logging.INFO, filemode='a')
+    logging.basicConfig(filename=os.path.join(run_dir, 'training.log'),
+                        level=logging.INFO, filemode='a')
     logger = logging.getLogger()
 
-    # Запишем параметры обучения в summary.txt
+    # Запишем параметры обучения
     with open(summary_txt, "w", encoding="utf-8") as f:
         f.write(f"Training started\n")
         f.write(f"Model: DenseNet121\n")
-        f.write(f"Device: {DEVICE}\n")
-        f.write(f"Batch size: {BATCH_SIZE}, Epochs: {NUM_EPOCHS}, LR: {LR}\n\n")
+        f.write(f"Device: {device}\n")
+        f.write(f"Dataset: {args.source}\n")
+        f.write(f"Batch size: {args.batch_size}, Epochs: {args.epochs}, LR: {args.lr}\n\n")
 
     # Для графиков
     history = {"train_loss": [], "val_loss": [], "val_mape": []}
 
-    for epoch in range(1, NUM_EPOCHS + 1):
+    # === Цикл обучения ===
+    for epoch in range(1, args.epochs + 1):
         start_time = time.time()
-        logging.info(f"\nEpoch {epoch}/{NUM_EPOCHS}")
-        print(f"\nEpoch {epoch}/{NUM_EPOCHS}")
+        logging.info(f"\nEpoch {epoch}/{args.epochs}")
+        print(f"\nEpoch {epoch}/{args.epochs}")
 
-        # ===== TRAIN =====
+        # --- TRAIN ---
         model.train()
         train_losses = []
         train_bar = tqdm(train_loader, desc='  Training', unit='batch')
         for imgs, labels in train_bar:
-            imgs, labels = imgs.to(DEVICE), labels.to(DEVICE)
+            imgs, labels = imgs.to(device), labels.to(device)
             preds = model(imgs)
             loss_mse = criterion(preds, labels)
             loss_mape = mape_loss(preds, labels)
@@ -139,13 +138,13 @@ def main():
             train_losses.append(loss.item())
             train_bar.set_postfix({'loss': f'{loss.item():.4f}'})
 
-        # ===== VALIDATION =====
+        # --- VALIDATION ---
         model.eval()
         val_losses, val_maps = [], []
         val_bar = tqdm(val_loader, desc='  Validating', unit='batch')
         with torch.no_grad():
             for imgs, labels in val_bar:
-                imgs, labels = imgs.to(DEVICE), labels.to(DEVICE)
+                imgs, labels = imgs.to(device), labels.to(device)
                 preds = model(imgs)
                 loss_mse = criterion(preds, labels)
                 loss_mape = mape_loss(preds, labels)
@@ -160,49 +159,52 @@ def main():
         elapsed = time.time() - start_time
         current_lr = optimizer.param_groups[0]['lr']
 
-        # Сохраним в историю
+        # История
         history["train_loss"].append(avg_train)
         history["val_loss"].append(avg_val)
         history["val_mape"].append(avg_mape * 100)
 
         print(
-            f"Epoch {epoch} done in {elapsed:.1f}s - Train Loss: {avg_train:.4f} | Val Loss: {avg_val:.4f} | Val MAPE: {avg_mape * 100:.2f}% | LR: {current_lr:.2e}"
+            f"Epoch {epoch} done in {elapsed:.1f}s - "
+            f"Train Loss: {avg_train:.4f} | Val Loss: {avg_val:.4f} | "
+            f"Val MAPE: {avg_mape*100:.2f}% | LR: {current_lr:.2e}"
         )
         logging.info(
-            f"Epoch {epoch} done in {elapsed:.1f}s - Train Loss: {avg_train:.4f} | Val Loss: {avg_val:.4f} | Val MAPE: {avg_mape * 100:.2f}% | LR: {current_lr:.2e}"
+            f"Epoch {epoch} done in {elapsed:.1f}s - "
+            f"Train Loss: {avg_train:.4f} | Val Loss: {avg_val:.4f} | "
+            f"Val MAPE: {avg_mape*100:.2f}% | LR: {current_lr:.2e}"
         )
 
-        # === Запись в CSV ===
+        # Запись в CSV
         with open(metrics_csv, mode="a", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerow([epoch, avg_train, avg_val, avg_mape * 100, elapsed, current_lr])
 
-        # === Запись в TXT (summary) ===
+        # Запись в summary
         with open(summary_txt, "a", encoding="utf-8") as f:
             f.write(
-                f"Epoch {epoch}/{NUM_EPOCHS} - "
+                f"Epoch {epoch}/{args.epochs} - "
                 f"Train Loss: {avg_train:.4f}, Val Loss: {avg_val:.4f}, "
                 f"Val MAPE: {avg_mape*100:.2f}%, Time: {elapsed:.1f}s, LR: {current_lr:.2e}\n"
             )
 
         scheduler.step(avg_val)
 
-        # Checkpoint при улучшении MAPE
+        # Чекпоинт
         if avg_mape < best_val_mape:
             best_val_mape = avg_mape
-            # Добавляем timestamp к имени модели
             model_filename = f'best_model_densenet_epoch{epoch}_{datetime.now().strftime("%Y%m%d_%H%M%S")}.pth'
             ckpt_path = os.path.join(run_dir, model_filename)
             torch.save(model.state_dict(), ckpt_path)
-            logger.info(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape * 100:.2f}%)")
-            print(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape * 100:.2f}%)")
+            logger.info(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape*100:.2f}%)")
+            print(f"  Saved best DenseNet model to {ckpt_path} (Val MAPE: {avg_mape*100:.2f}%)")
 
     logging.info("\nTraining complete.")
     print("\nTraining complete.")
     with open(summary_txt, "a", encoding="utf-8") as f:
         f.write("\nTraining complete.\n")
 
-    # === Построение графиков ===
+    # === Графики ===
     plt.figure()
     plt.plot(history["train_loss"], label="Train Loss")
     plt.plot(history["val_loss"], label="Val Loss")
@@ -222,6 +224,14 @@ def main():
     plt.savefig(os.path.join(run_dir, "val_mape.png"))
     plt.close()
 
+
 if __name__ == '__main__':
     freeze_support()
-    main()
+    parser = argparse.ArgumentParser(description="Train DenseNet121 on FlameDataset")
+    parser.add_argument("--source", type=str, default="images",
+                        help="Имя набора данных (например: 'images' или 'cropped_images')")
+    parser.add_argument("--epochs", type=int, default=70, help="Количество эпох обучения")
+    parser.add_argument("--batch_size", type=int, default=16, help="Размер батча")
+    parser.add_argument("--lr", type=float, default=1e-4, help="Learning rate")
+    args = parser.parse_args()
+    main(args)

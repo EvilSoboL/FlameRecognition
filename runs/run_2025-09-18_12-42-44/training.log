@@ -1,0 +1,6 @@
+INFO:root:
+Epoch 1/70
+INFO:root:Epoch 1 done in 387.8s - Train Loss: 653872.9100 | Val Loss: 677288.8011 | Val MAPE: 98.64% | LR: 1.00e-04
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-18_12-42-44\best_model_densenet_epoch1_20250918_124935.pth (Val MAPE: 98.64%)
+INFO:root:
+Epoch 2/70

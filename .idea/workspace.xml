@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="2.3 - best_model_densenet_epoch70_20250918_010519.pth">
-      <change afterPath="$PROJECT_DIR$/runs/run_2025-09-18_12-42-44/first_input.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/crop_images.py" afterDir="false" />
+    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="2.4 - Подготовлен dataset из обрезанных изображений">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/prepare_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/prepare_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/train_model_densenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/train_model_densenet.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +71,7 @@
       <recent name="C:\Users\evils\PycharmProjects\FlameRecognition\data\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\evils\PycharmProjects\FlameRecognition\data" />
       <recent name="C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-18_12-42-44" />
       <recent name="C:\Users\evils\PycharmProjects\FlameRecognition\scripts" />
     </key>
@@ -309,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758173995307</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2.4 - Подготовлен dataset из обрезанных изображений">
+      <option name="closed" value="true" />
+      <created>1758192187543</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1758192187543</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +335,8 @@
     <MESSAGE value="2.1 - Обрезка исходных изображений" />
     <MESSAGE value="2.2 - Сохранение модели в runs" />
     <MESSAGE value="2.3 - best_model_densenet_epoch70_20250918_010519.pth" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.3 - best_model_densenet_epoch70_20250918_010519.pth" />
+    <MESSAGE value="2.4 - Подготовлен dataset из обрезанных изображений" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.4 - Подготовлен dataset из обрезанных изображений" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FlameRecognition$train_model_densenet.coverage" NAME="train_model_densenet Coverage Results" MODIFIED="1751882510740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
