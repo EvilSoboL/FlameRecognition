@@ -25,3 +25,194 @@ INFO:root:Epoch 6 done in 332.5s - Train Loss: 0.0930 | Val Loss: 0.0581 | Val M
 INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch6_20250919_164036.pth (Val MAPE: 10.02%)
 INFO:root:
 Epoch 7/70
+INFO:root:Epoch 7 done in 348.4s - Train Loss: 0.0949 | Val Loss: 0.0529 | Val MAPE: 8.50% | LR: 1.00e-04
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch7_20250919_164624.pth (Val MAPE: 8.50%)
+INFO:root:
+Epoch 8/70
+INFO:root:Epoch 8 done in 341.4s - Train Loss: 0.0843 | Val Loss: 0.0730 | Val MAPE: 11.01% | LR: 1.00e-04
+INFO:root:
+Epoch 9/70
+INFO:root:Epoch 9 done in 304.1s - Train Loss: 0.0817 | Val Loss: 0.0768 | Val MAPE: 9.47% | LR: 1.00e-04
+INFO:root:
+Epoch 10/70
+INFO:root:Epoch 10 done in 320.0s - Train Loss: 0.0762 | Val Loss: 0.0514 | Val MAPE: 10.19% | LR: 1.00e-04
+INFO:root:
+Epoch 11/70
+INFO:root:Epoch 11 done in 317.4s - Train Loss: 0.0671 | Val Loss: 0.0414 | Val MAPE: 9.15% | LR: 1.00e-04
+INFO:root:
+Epoch 12/70
+INFO:root:Epoch 12 done in 363.2s - Train Loss: 0.0605 | Val Loss: 0.0518 | Val MAPE: 9.55% | LR: 1.00e-04
+INFO:root:
+Epoch 13/70
+INFO:root:Epoch 13 done in 340.8s - Train Loss: 0.0583 | Val Loss: 0.0707 | Val MAPE: 9.81% | LR: 1.00e-04
+INFO:root:
+Epoch 14/70
+INFO:root:Epoch 14 done in 301.5s - Train Loss: 0.0547 | Val Loss: 0.0321 | Val MAPE: 6.92% | LR: 1.00e-04
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch14_20250919_172433.pth (Val MAPE: 6.92%)
+INFO:root:
+Epoch 15/70
+INFO:root:Epoch 15 done in 310.2s - Train Loss: 0.0493 | Val Loss: 0.0952 | Val MAPE: 12.19% | LR: 1.00e-04
+INFO:root:
+Epoch 16/70
+INFO:root:Epoch 16 done in 310.9s - Train Loss: 0.0509 | Val Loss: 0.0348 | Val MAPE: 8.96% | LR: 1.00e-04
+INFO:root:
+Epoch 17/70
+INFO:root:Epoch 17 done in 302.2s - Train Loss: 0.0443 | Val Loss: 0.0420 | Val MAPE: 7.53% | LR: 1.00e-04
+INFO:root:
+Epoch 18/70
+INFO:root:Epoch 18 done in 275.4s - Train Loss: 0.0430 | Val Loss: 0.0502 | Val MAPE: 8.27% | LR: 1.00e-04
+INFO:root:
+Epoch 19/70
+INFO:root:Epoch 19 done in 274.3s - Train Loss: 0.0343 | Val Loss: 0.0232 | Val MAPE: 6.67% | LR: 5.00e-05
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch19_20250919_174906.pth (Val MAPE: 6.67%)
+INFO:root:
+Epoch 20/70
+INFO:root:Epoch 20 done in 273.8s - Train Loss: 0.0315 | Val Loss: 0.0276 | Val MAPE: 6.39% | LR: 5.00e-05
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch20_20250919_175340.pth (Val MAPE: 6.39%)
+INFO:root:
+Epoch 21/70
+INFO:root:Epoch 21 done in 274.8s - Train Loss: 0.0290 | Val Loss: 0.0294 | Val MAPE: 6.32% | LR: 5.00e-05
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch21_20250919_175815.pth (Val MAPE: 6.32%)
+INFO:root:
+Epoch 22/70
+INFO:root:Epoch 22 done in 273.2s - Train Loss: 0.0289 | Val Loss: 0.0449 | Val MAPE: 7.32% | LR: 5.00e-05
+INFO:root:
+Epoch 23/70
+INFO:root:Epoch 23 done in 273.5s - Train Loss: 0.0276 | Val Loss: 0.0238 | Val MAPE: 5.64% | LR: 5.00e-05
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch23_20250919_180722.pth (Val MAPE: 5.64%)
+INFO:root:
+Epoch 24/70
+INFO:root:Epoch 24 done in 274.1s - Train Loss: 0.0247 | Val Loss: 0.0224 | Val MAPE: 5.65% | LR: 2.50e-05
+INFO:root:
+Epoch 25/70
+INFO:root:Epoch 25 done in 274.1s - Train Loss: 0.0246 | Val Loss: 0.0249 | Val MAPE: 5.06% | LR: 2.50e-05
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch25_20250919_181630.pth (Val MAPE: 5.06%)
+INFO:root:
+Epoch 26/70
+INFO:root:Epoch 26 done in 273.2s - Train Loss: 0.0228 | Val Loss: 0.0206 | Val MAPE: 4.82% | LR: 2.50e-05
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch26_20250919_182104.pth (Val MAPE: 4.82%)
+INFO:root:
+Epoch 27/70
+INFO:root:Epoch 27 done in 273.6s - Train Loss: 0.0215 | Val Loss: 0.0222 | Val MAPE: 5.85% | LR: 2.50e-05
+INFO:root:
+Epoch 28/70
+INFO:root:Epoch 28 done in 273.4s - Train Loss: 0.0215 | Val Loss: 0.0195 | Val MAPE: 4.89% | LR: 2.50e-05
+INFO:root:
+Epoch 29/70
+INFO:root:Epoch 29 done in 272.6s - Train Loss: 0.0208 | Val Loss: 0.0245 | Val MAPE: 5.01% | LR: 2.50e-05
+INFO:root:
+Epoch 30/70
+INFO:root:Epoch 30 done in 273.3s - Train Loss: 0.0212 | Val Loss: 0.0192 | Val MAPE: 5.45% | LR: 2.50e-05
+INFO:root:
+Epoch 31/70
+INFO:root:Epoch 31 done in 273.1s - Train Loss: 0.0204 | Val Loss: 0.0222 | Val MAPE: 5.37% | LR: 2.50e-05
+INFO:root:
+Epoch 32/70
+INFO:root:Epoch 32 done in 272.9s - Train Loss: 0.0197 | Val Loss: 0.0183 | Val MAPE: 4.73% | LR: 2.50e-05
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch32_20250919_184823.pth (Val MAPE: 4.73%)
+INFO:root:
+Epoch 33/70
+INFO:root:Epoch 33 done in 272.4s - Train Loss: 0.0191 | Val Loss: 0.0194 | Val MAPE: 4.87% | LR: 2.50e-05
+INFO:root:
+Epoch 34/70
+INFO:root:Epoch 34 done in 273.0s - Train Loss: 0.0210 | Val Loss: 0.0201 | Val MAPE: 4.84% | LR: 2.50e-05
+INFO:root:
+Epoch 35/70
+INFO:root:Epoch 35 done in 273.4s - Train Loss: 0.0185 | Val Loss: 0.0182 | Val MAPE: 4.62% | LR: 2.50e-05
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch35_20250919_190202.pth (Val MAPE: 4.62%)
+INFO:root:
+Epoch 36/70
+INFO:root:Epoch 36 done in 272.7s - Train Loss: 0.0179 | Val Loss: 0.0190 | Val MAPE: 4.96% | LR: 2.50e-05
+INFO:root:
+Epoch 37/70
+INFO:root:Epoch 37 done in 272.7s - Train Loss: 0.0182 | Val Loss: 0.0211 | Val MAPE: 4.91% | LR: 2.50e-05
+INFO:root:
+Epoch 38/70
+INFO:root:Epoch 38 done in 273.2s - Train Loss: 0.0198 | Val Loss: 0.0230 | Val MAPE: 4.95% | LR: 2.50e-05
+INFO:root:
+Epoch 39/70
+INFO:root:Epoch 39 done in 274.3s - Train Loss: 0.0188 | Val Loss: 0.0254 | Val MAPE: 5.25% | LR: 2.50e-05
+INFO:root:
+Epoch 40/70
+INFO:root:Epoch 40 done in 272.9s - Train Loss: 0.0176 | Val Loss: 0.0247 | Val MAPE: 5.22% | LR: 1.25e-05
+INFO:root:
+Epoch 41/70
+INFO:root:Epoch 41 done in 273.4s - Train Loss: 0.0170 | Val Loss: 0.0208 | Val MAPE: 4.65% | LR: 1.25e-05
+INFO:root:
+Epoch 42/70
+INFO:root:Epoch 42 done in 272.5s - Train Loss: 0.0164 | Val Loss: 0.0190 | Val MAPE: 4.74% | LR: 1.25e-05
+INFO:root:
+Epoch 43/70
+INFO:root:Epoch 43 done in 272.1s - Train Loss: 0.0170 | Val Loss: 0.0198 | Val MAPE: 4.39% | LR: 1.25e-05
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch43_20250919_193826.pth (Val MAPE: 4.39%)
+INFO:root:
+Epoch 44/70
+INFO:root:Epoch 44 done in 272.6s - Train Loss: 0.0150 | Val Loss: 0.0212 | Val MAPE: 4.75% | LR: 6.25e-06
+INFO:root:
+Epoch 45/70
+INFO:root:Epoch 45 done in 272.9s - Train Loss: 0.0158 | Val Loss: 0.0191 | Val MAPE: 4.29% | LR: 6.25e-06
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch45_20250919_194731.pth (Val MAPE: 4.29%)
+INFO:root:
+Epoch 46/70
+INFO:root:Epoch 46 done in 273.5s - Train Loss: 0.0155 | Val Loss: 0.0195 | Val MAPE: 4.30% | LR: 6.25e-06
+INFO:root:
+Epoch 47/70
+INFO:root:Epoch 47 done in 272.3s - Train Loss: 0.0206 | Val Loss: 0.0181 | Val MAPE: 4.51% | LR: 6.25e-06
+INFO:root:
+Epoch 48/70
+INFO:root:Epoch 48 done in 272.3s - Train Loss: 0.0159 | Val Loss: 0.0178 | Val MAPE: 4.40% | LR: 6.25e-06
+INFO:root:
+Epoch 49/70
+INFO:root:Epoch 49 done in 273.7s - Train Loss: 0.0153 | Val Loss: 0.0175 | Val MAPE: 4.54% | LR: 6.25e-06
+INFO:root:
+Epoch 50/70
+INFO:root:Epoch 50 done in 272.3s - Train Loss: 0.0164 | Val Loss: 0.0178 | Val MAPE: 4.73% | LR: 6.25e-06
+INFO:root:
+Epoch 51/70
+INFO:root:Epoch 51 done in 273.2s - Train Loss: 0.0145 | Val Loss: 0.0173 | Val MAPE: 4.18% | LR: 6.25e-06
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch51_20250919_201449.pth (Val MAPE: 4.18%)
+INFO:root:
+Epoch 52/70
+INFO:root:Epoch 52 done in 271.8s - Train Loss: 0.0152 | Val Loss: 0.0179 | Val MAPE: 4.07% | LR: 6.25e-06
+INFO:root:  Saved best DenseNet model to C:\Users\evils\PycharmProjects\FlameRecognition\runs\run_2025-09-19_16-07-25_cropped_images\best_model_densenet_epoch52_20250919_201921.pth (Val MAPE: 4.07%)
+INFO:root:
+Epoch 53/70
+INFO:root:Epoch 53 done in 271.5s - Train Loss: 0.0153 | Val Loss: 0.0177 | Val MAPE: 4.11% | LR: 6.25e-06
+INFO:root:
+Epoch 54/70
+INFO:root:Epoch 54 done in 271.7s - Train Loss: 0.0138 | Val Loss: 0.0174 | Val MAPE: 4.46% | LR: 6.25e-06
+INFO:root:
+Epoch 55/70
+INFO:root:Epoch 55 done in 272.3s - Train Loss: 0.0148 | Val Loss: 0.0198 | Val MAPE: 4.79% | LR: 6.25e-06
+INFO:root:
+Epoch 56/70
+INFO:root:Epoch 56 done in 273.1s - Train Loss: 0.0139 | Val Loss: 0.0183 | Val MAPE: 4.21% | LR: 3.13e-06
+INFO:root:
+Epoch 57/70
+INFO:root:Epoch 57 done in 271.4s - Train Loss: 0.0145 | Val Loss: 0.0187 | Val MAPE: 4.62% | LR: 3.13e-06
+INFO:root:
+Epoch 58/70
+INFO:root:Epoch 58 done in 272.8s - Train Loss: 0.0158 | Val Loss: 0.0174 | Val MAPE: 4.29% | LR: 3.13e-06
+INFO:root:
+Epoch 59/70
+INFO:root:Epoch 59 done in 272.5s - Train Loss: 0.0141 | Val Loss: 0.0185 | Val MAPE: 4.68% | LR: 3.13e-06
+INFO:root:
+Epoch 60/70
+INFO:root:Epoch 60 done in 272.1s - Train Loss: 0.0145 | Val Loss: 0.0182 | Val MAPE: 4.13% | LR: 1.56e-06
+INFO:root:
+Epoch 61/70
+INFO:root:Epoch 61 done in 271.8s - Train Loss: 0.0139 | Val Loss: 0.0184 | Val MAPE: 4.54% | LR: 1.56e-06
+INFO:root:
+Epoch 62/70
+INFO:root:Epoch 62 done in 272.1s - Train Loss: 0.0142 | Val Loss: 0.0181 | Val MAPE: 4.53% | LR: 1.56e-06
+INFO:root:
+Epoch 63/70
+INFO:root:Epoch 63 done in 271.1s - Train Loss: 0.0139 | Val Loss: 0.0181 | Val MAPE: 4.32% | LR: 1.56e-06
+INFO:root:
+Epoch 64/70
+INFO:root:Epoch 64 done in 271.4s - Train Loss: 0.0133 | Val Loss: 0.0185 | Val MAPE: 4.57% | LR: 7.81e-07
+INFO:root:
+Epoch 65/70
+INFO:root:Epoch 65 done in 272.2s - Train Loss: 0.0148 | Val Loss: 0.0181 | Val MAPE: 4.27% | LR: 7.81e-07
+INFO:root:
+Training complete.
