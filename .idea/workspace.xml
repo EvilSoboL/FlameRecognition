@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="2.5.1 - Старый infer_model.py">
-      <change afterPath="$PROJECT_DIR$/runs/run_2025-09-19_16-07-25_cropped_images/first_input.png" afterDir="false" />
+    <list default="true" id="fd59cb26-c756-4059-a86b-84773d14a87e" name="Changes" comment="2.5.2 - Новый infer_model.py">
+      <change afterPath="$PROJECT_DIR$/scripts/batch_infer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/run_2025-09-19_16-07-25_cropped_images/training.log" beforeDir="false" afterPath="$PROJECT_DIR$/runs/run_2025-09-19_16-07-25_cropped_images/training.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/run_2025-09-19_16-07-25_cropped_images/training_metrics.csv" beforeDir="false" afterPath="$PROJECT_DIR$/runs/run_2025-09-19_16-07-25_cropped_images/training_metrics.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/run_2025-09-19_16-07-25_cropped_images/training_summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/runs/run_2025-09-19_16-07-25_cropped_images/training_summary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/infer_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/infer_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758275054053</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="2.5.2 - Новый infer_model.py">
+      <option name="closed" value="true" />
+      <created>1758615475675</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1758615475675</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +385,8 @@
     <MESSAGE value="2.4 - Подготовлен dataset из обрезанных изображений" />
     <MESSAGE value="2.5 - Обучена модель на cropped_images" />
     <MESSAGE value="2.5.1 - Старый infer_model.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.5.1 - Старый infer_model.py" />
+    <MESSAGE value="2.5.2 - Новый infer_model.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.5.2 - Новый infer_model.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FlameRecognition$train_model_densenet.coverage" NAME="train_model_densenet Coverage Results" MODIFIED="1751882510740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
